@@ -46,6 +46,8 @@ function startGame() {
     document.addEventListener('keydown', (e) =>
         pacman.handleKeyInput(e, gameBoard.objectExist)
     );
+
+    timer = setInterval(() => gameLoop(pacman, GLOBAL_SPEED));
 }
 
 startButton.addEventListener('click', startGame);
