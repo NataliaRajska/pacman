@@ -46,7 +46,7 @@ class GameBoard {
     }
 
     rotateDiv(pos, deg) {
-        this.grid[pos].style.transform = `rotate({deg}deg)`;
+        this.grid[pos].style.transform = `rotate(${deg}deg)`;
     }
 
     static createGameBoard(DOMGrid, level) {
@@ -62,7 +62,7 @@ class GameBoard {
             );
             const { classesToRemove, classesToAdd } = character.makeMove();
 
-            if(character.rotation && nextMovePos !== character.pos ){
+            if(character.rotation && nextMovePos !== character.pos){
                 this.rotateDiv(nextMovePos, character.dir.rotation);
                 this.rotateDiv(character.pos, 0);
             }
