@@ -24,9 +24,9 @@ let powerPillTimer = false;
 
 
 function gameOver(pacman, grid) {
-    document.removeEventListener('keydown' , e =>
-    pacman.handleKeyInput(e, gameBoard.objectExist)
-);
+    document.removeEventListener('keydown', e =>
+        pacman.handleKeyInput(e, gameBoard.objectExist)
+    );
     gameBoard.showGameStatus(gameWin);
     clearInterval(timer);
     startButton.classList.remove('hide');
@@ -55,10 +55,17 @@ function checkCollision(pacman, ghosts) {
 
 function gameLoop(pacman, ghosts) {
     gameBoard.moveCharacter(pacman);
-    checkCollision(pacman,ghosts);
+    checkCollision(pacman, ghosts);
 
     ghosts.forEach((ghost) => gameBoard.moveCharacter(ghost));
     checkCollision(pacman, ghosts);
+
+    // Check if Pacman eats a dot
+    if (gameBoard.objectExist(pacman.pos, OBJECT_TYPE.DOT)) {
+        gameBoard.removeObject(pacman.pos, [OBJECT_TYPE.DOT]);
+        gameBoard.dotCount--;
+        score += 10;
+    }
 }
 
 function startGame() {
