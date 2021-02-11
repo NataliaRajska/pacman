@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
-  background: url('background.jpg') no-repeat center center fixed;
+  background: url('background.jpeg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -18,7 +19,8 @@ body {
 #game {
   position: relative;
   display: inline-grid;
-  background: black;
+  background: #351948;
+  opacity: 0.8;
 }
 
 .game-status {
@@ -30,10 +32,9 @@ body {
   justify-content: center;
   width: 100%;
   height: 50px;
-  border: 5px #bbbbef solid;
-  background: black;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  border: 2px #453573 solid;
+  background: #000000;
+  color: #d58fbb;
   font-size: 1.5rem;
 }
 
@@ -43,16 +44,19 @@ body {
   justify-content: center;
   width: 200px;
   height: 50px;
-  border: 5px #a4a4d5 solid;
-  background: black;
+  border: 2px #e8b7d9 solid;
+  border-radius: 5em;
+  background: #130f12;
+  opacity: .6;
   margin-top: 20px;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
 }
 
 #start-button {
   margin-top: 20px;
+  border-radius: 2em;
+  background-color: #cd9cbd;
 }
 
 .hide {
@@ -64,22 +68,24 @@ body {
 }
 
 .blank {
-  background: black;
+  background: #351948;
 }
 
 .wall {
-  border: 1px solid #a4a4c7;
+  border: 1px solid #8b8bb3;
+  background-color: #1d0e28;
+
 }
 
 .dot {
   background: white;
-  border: 8px solid black;
+  border: 8px solid #351948;
   border-radius: 50%;
 }
 
 .pill {
-  background: white;
-  border: 5px solid black;
+  background: #e69a01;
+  border: 5px solid #351948;
   border-radius: 50%;
 }
 
@@ -116,27 +122,27 @@ body {
 }
 
 .scared {
-  background: #adaddb !important;
+  background: #4a9084 !important;
 }
 
 .blinky {
-  background: red;
+  background: #c97575;
 }
 
 .pinky {
-  background: pink;
+  background: #ffc0cb;
 }
 
 .inky {
-  background: cyan;
+  background: #ac83c9;
 }
 
 .clyde {
-  background: orange;
+  background: #d4b343;
 }
 
 .pacman {
-  background: yellow;
+  background: #ffbd10;
   border: none;
   border-radius: 50%;
   clip-path: polygon(
