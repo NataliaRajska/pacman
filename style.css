@@ -58,6 +58,9 @@ body {
   border-radius: 2em;
   background-color: #cd9cbd;
 }
+#start-button:focus {
+  outline: none;
+}
 
 .hide {
   display: none;
