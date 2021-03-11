@@ -6,11 +6,11 @@ import Pacman from './Pacman';
 import Ghost from "./Ghost";
 
 // Sounds
-import soundDot from './sounds/munch.wav';
-import soundGameOver from './sounds/death.wav';
-import soundGameStart from './sounds/game_start.wav';
-import soundGhost from './sounds/eat_ghost.wav';
-import soundPill from './sounds/pill.wav';
+import soundDot from '../sources/sounds/munch.wav';
+import soundGameOver from '../sources/sounds/death.wav';
+import soundGameStart from '../sources/sounds/game_start.wav';
+import soundGhost from '../sources/sounds/eat_ghost.wav';
+import soundPill from '../sources/sounds/pill.wav';
 
 // DOM elements
 const gameGrid = document.querySelector('#game');

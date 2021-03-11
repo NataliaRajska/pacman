@@ -2,10 +2,10 @@
   "name": "js-pacman",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "classes/index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "parcel views/index.html",
+    "build": "parcel build views/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
